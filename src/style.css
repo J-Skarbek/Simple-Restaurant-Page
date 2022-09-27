@@ -140,4 +140,41 @@ button:active {
     margin-bottom: 3%;
 }
 
+.main-content {
+    grid-column: 3 / span 10;
+    grid-row: 2 / span 9;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(50px, 1fr));
+    grid-template-rows: repeat(10, minmax(50px, 1fr));
+}
+
+.featured-img {
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 4;
+    width: 100%;
+    max-width: 100%;
+}
+
+.details-box {
+    grid-column: 8 / span 4;
+    grid-row: 2 / span 4;
+}
+
+.details-box h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.details-box h3 {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 5%;
+}
+
+.dish-details-text {
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
 
