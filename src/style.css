@@ -29,7 +29,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(100px, 1fr));
+    grid-template-rows: 75px repeat(9, minmax(100px, 1fr));
+    height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -90,13 +94,15 @@ button:active {
     --black: #000;
 }
 
-.header {
+/* .header {
     display: grid;
     grid-template-columns: repeat(12, minmax(1fr, 100px));
     grid-template-rows: 1(100px);
-}
+} */
 
 .nav-bar {
+    grid-column: 1 / span 12;;
+    grid-row: 1 / span 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -113,9 +119,25 @@ button:active {
     max-width: 200px;
 }
 
-/* .main-content {
-    /* background-image: url();
-    background: url('./assets/images/linguine.jpg');
-} */
+.sidebar {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--pastel-brown);
+    padding: 10%;
+}
+
+.sidebar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5%;
+}
+
+.menu-items li {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
 
 
