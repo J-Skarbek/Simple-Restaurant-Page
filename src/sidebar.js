@@ -9,16 +9,24 @@ export default function sideBarComponent() {
   itemsList.classList.add('menu-items')
 
   const listItem1 = document.createElement('li')
-  listItem1.innerText = 'Linguinie'
+  const item1Link = document.createElement('a')
+  listItem1.appendChild(item1Link)
+  item1Link.innerText = 'Linguinie'
 
   const listItem2 = document.createElement('li')
-  listItem2.innerText = 'French Toast & Fruit'
+  const item2Link = document.createElement('a')
+  listItem2.appendChild(item2Link)
+  item2Link.innerText = 'French Toast & Fruit'
 
   const listItem3 = document.createElement('li')
-  listItem3.innerText = 'Filet'
+  const item3Link = document.createElement('a')
+  listItem3.appendChild(item3Link)
+  item3Link.innerText = 'Filet'
 
   const listItem4 = document.createElement('li')
-  listItem4.innerText = 'Eggs'
+  const item4Link = document.createElement('a')
+  listItem4.appendChild(item4Link)
+  item4Link.innerText = 'Eggs'
 
 
   element.appendChild(sideHeader)
