@@ -1,6 +1,6 @@
 import Filet from './assets/images/fancy-filet.jpg'
 
-export default function bodyComponent() {
+function showFilet() {
   const element = document.createElement('div')
   element.classList.add('main-content')
 
@@ -33,5 +33,7 @@ export default function bodyComponent() {
   
   return element 
 }
-  
-document.body.appendChild(bodyComponent());
+
+export function appendFilet() {
+    document.body.appendChild(showFilet())
+}
