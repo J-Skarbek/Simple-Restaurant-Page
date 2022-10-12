@@ -1,8 +1,7 @@
 import Linguine from './assets/images/linguine.jpg'
 
-export default function bodyComponent() {
-  const element = document.createElement('div')
-  element.classList.add('main-content')
+function showLinguine() {
+  const element = document.querySelector('.main-content')
 
   const linguineImg = new Image()
   linguineImg.src = Linguine
@@ -34,4 +33,6 @@ export default function bodyComponent() {
   return element 
 }
   
-document.body.appendChild(bodyComponent());
+export function appendLinguine() {
+  document.body.appendChild(showLinguine());
+}

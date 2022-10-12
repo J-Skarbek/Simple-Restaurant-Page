@@ -11,7 +11,7 @@ export default function sideBarComponent() {
   const listItem1 = document.createElement('li')
   const item1Link = document.createElement('a')
   listItem1.appendChild(item1Link)
-  item1Link.innerText = 'Linguinie'
+  item1Link.innerText = 'Linguine'
 
   const listItem2 = document.createElement('li')
   const item2Link = document.createElement('a')

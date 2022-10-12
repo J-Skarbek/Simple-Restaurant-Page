@@ -1,8 +1,7 @@
 import FrenchToast from './assets/images/french-toast.jpg'
 
-export default function bodyComponent() {
-  const element = document.createElement('div')
-  element.classList.add('main-content')
+function showFrenchToast() {
+  const element = document.querySelector('.main-content')
 
   const frenchToastImg = new Image()
   frenchToastImg.src = FrenchToast
@@ -33,5 +32,7 @@ export default function bodyComponent() {
   
   return element 
 }
-  
-document.body.appendChild(bodyComponent());
+
+export function appendFrenchToast() {
+  document.body.appendChild(showFrenchToast());
+}

@@ -1,8 +1,7 @@
 import Filet from './assets/images/fancy-filet.jpg'
 
 function showFilet() {
-  const element = document.createElement('div')
-  element.classList.add('main-content')
+  const element =document.querySelector('.main-content')
 
   const filetImg = new Image()
   filetImg.src = Filet

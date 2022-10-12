@@ -1,8 +1,7 @@
 import Eggs from './assets/images/fancy-eggs.jpg'
 
 function showEggs() {
-  const element = document.createElement('div')
-  element.classList.add('main-content')
+  const element = document.querySelector('.main-content')
 
   const eggsImg = new Image()
   eggsImg.src = Eggs
@@ -29,7 +28,7 @@ function showEggs() {
   detailsBox.appendChild(dishPrice)
   detailsBox.appendChild(dishDetails)
   dishDetails.appendChild(detailsTextBody)
-  
+
   return element
 }
 
