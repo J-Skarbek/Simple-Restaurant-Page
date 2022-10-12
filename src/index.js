@@ -3,6 +3,8 @@ import Linguine from './assets/images/linguine.jpg'
 import FrenchToast from './assets/images/french-toast.jpg'
 import Filet from './assets/images/fancy-filet.jpg'
 import Eggs from './assets/images/fancy-eggs.jpg'
+import Logo from './assets/Logos/slate.svg'
+
 
 function headerComponent() {
   const element = document.createElement('div')

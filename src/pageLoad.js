@@ -7,13 +7,17 @@ import { default as footer } from './footer.js'
 // import { default as filet} from './filet.js'
 import { default as eggs} from './eggs.js'
 
+// const mainContent = document.querySelector('.content')
+
 export default function pageLoad() {
   header()
+  document.body.appendChild(header());
   sidebar()
   body()
 //   linguine()
 //   frenchToast()
 //   filet()
   eggs()
+//   document.body.appendChild(eggs());
   footer()
 }

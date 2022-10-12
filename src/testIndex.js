@@ -7,9 +7,7 @@ pageLoad()
 function addListnersToMenuItems() {
     const menuItems = Array.from(document.querySelectorAll('.menu-items > li'))
     menuItems.forEach(item => {
-        item.addEventListener('click', () => {
-            alert('testing')
-        })
+        item.addEventListener('click', switchItem)
     });
 }
 
@@ -18,3 +16,7 @@ function addListnersToMenuItems() {
 // }
 
 addListnersToMenuItems()
+
+function switchItem() {
+    alert('testing')
+}
