@@ -1,4 +1,4 @@
-export function mainBodyComponent() {
+function mainBodyComponent() {
   const element = document.createElement('div')
   element.classList.add('main-content')
   return element
